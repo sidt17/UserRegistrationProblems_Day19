@@ -7,24 +7,19 @@ namespace RegexDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Last Name");
-            string LastName = Console.ReadLine();
+            Console.WriteLine("Enter Valid Email");
+            string ValidEmail = Console.ReadLine();
             Pattern pattern = new Pattern();
 
-            if (pattern.ValidateLastname(LastName))
+            if (pattern.ValidateEmail(ValidEmail))
             {
-                Console.WriteLine("Lastname matched");
+                Console.WriteLine("Email is valid");
             }
-            else if (LastName.Length < 3)
-            {
-                Console.WriteLine("Please enter atleast three characters");
-
-
-            }
+           
 
             else
             {
-                Console.WriteLine("Lastname does not matched");
+                Console.WriteLine("Email is not valid");
             }
 
 
