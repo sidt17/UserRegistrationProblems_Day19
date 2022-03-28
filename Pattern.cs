@@ -11,12 +11,12 @@ namespace RegexDemo
 {
     public class Pattern
     {
-        public static string RegexPattern = "^91[' '][7-9]{1}[0-9]{9}$";
+        public static string RegexPattern = "^[a-zA-Z0-9]{8,}$";
 
 
-        public bool ValidateMobileFormat(string MobileNumber)
+        public bool ValidateMobileFormat(string password)
         {
-            return Regex.IsMatch(MobileNumber, RegexPattern);
+            return Regex.IsMatch(password, RegexPattern);
         }
     } 
 }
