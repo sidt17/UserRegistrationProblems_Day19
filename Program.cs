@@ -7,15 +7,15 @@ namespace RegexDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter First Name");
-            string FirstName = Console.ReadLine();
+            Console.WriteLine("Enter Last Name");
+            string LastName = Console.ReadLine();
             Pattern pattern = new Pattern();
 
-            if (pattern.Validatefirstname(FirstName))
+            if (pattern.ValidateLastname(LastName))
             {
-                Console.WriteLine("Name matched");
+                Console.WriteLine("Lastname matched");
             }
-            else if (FirstName.Length < 3)
+            else if (LastName.Length < 3)
             {
                 Console.WriteLine("Please enter atleast three characters");
 
@@ -24,7 +24,7 @@ namespace RegexDemo
 
             else
             {
-                Console.WriteLine("Name does not matched");
+                Console.WriteLine("Lastname does not matched");
             }
 
 
