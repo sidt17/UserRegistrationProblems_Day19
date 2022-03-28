@@ -11,15 +11,19 @@ namespace RegexDemo
             string password = (Console.ReadLine());
             Pattern pattern = new Pattern();
 
-            if (pattern.ValidateMobileFormat(password))
+            if (pattern.ValidatePassword(password))
             {
-                Console.WriteLine("It is a valid password");
+                Console.WriteLine("It's valid password");
             }
-           
+            else if (password.Length<8)
+            {
+                Console.WriteLine("Please enter atleast 8 characters");
+            }
+
 
             else
             {
-                Console.WriteLine("Invalid Password");
+                Console.WriteLine("It should contains atleast 1 Uppercase");
             }
 
 
