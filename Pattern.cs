@@ -11,10 +11,11 @@ namespace RegexDemo
 {
     public class Pattern
     {
-        public static string RegexPattern = "^[a-zA-Z0-9]{8,}$";
+        public static string RegexPattern = "(?=.*?[A-Z]).{8,}";
 
 
-        public bool ValidateMobileFormat(string password)
+
+        public bool ValidatePassword(string password)
         {
             return Regex.IsMatch(password, RegexPattern);
         }
