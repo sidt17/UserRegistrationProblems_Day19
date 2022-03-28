@@ -11,7 +11,7 @@ namespace RegexDemo
 {
     public class Pattern
     {
-        public static string RegexPattern = "(?=.*?[A-Z])(?=.*?[0-9]).{8,}";
+        public static string RegexPattern = "(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}";
 
 
 
