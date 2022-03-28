@@ -23,7 +23,7 @@ namespace RegexDemo
 
             else
             {
-                Console.WriteLine("It should contains atleast 1 Uppercase");
+                Console.WriteLine("It's not a valid password");
             }
 
 
