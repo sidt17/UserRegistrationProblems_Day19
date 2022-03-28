@@ -11,11 +11,12 @@ namespace RegexDemo
 {
     public class Pattern
     {
-        public static string RegexPattern = "^[A-Z]{1}[A-Z a-z]{2,}$";
-     
-        public bool ValidateLastname(string LastName)
+        public static string RegexPattern = "^[a-zA-Z]+[.]{0,1}[a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-z]{2}){0,1}$";
+
+
+        public bool ValidateEmail(string ValidEmail)
         {
-            return Regex.IsMatch(LastName, RegexPattern);
+            return Regex.IsMatch(ValidEmail, RegexPattern);
         }
     } 
 }
