@@ -7,19 +7,19 @@ namespace RegexDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Mobile Number");
-            string MobileNumber = (Console.ReadLine());
+            Console.WriteLine("Enter your password");
+            string password = (Console.ReadLine());
             Pattern pattern = new Pattern();
 
-            if (pattern.ValidateMobileFormat(MobileNumber))
+            if (pattern.ValidateMobileFormat(password))
             {
-                Console.WriteLine("Mobile Number is valid");
+                Console.WriteLine("It is a valid password");
             }
            
 
             else
             {
-                Console.WriteLine("Please enter a valid Mobile Number. ");
+                Console.WriteLine("Invalid Password");
             }
 
 
