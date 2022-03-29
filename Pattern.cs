@@ -11,13 +11,13 @@ namespace RegexDemo
 {
     public class Pattern
     {
-        public static string RegexPattern = "(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}";
+        public static string RegexPattern = "(?=.*?[A-Z]{0,1})+[.]{0,1}(?=.*?[0-9]{0,1})(?=.*?[@-]).{8,}";
 
 
 
-        public bool ValidatePassword(string password)
+        public bool ValidateEmailSample(string EmailSample)
         {
-            return Regex.IsMatch(password, RegexPattern);
+            return Regex.IsMatch(EmailSample, RegexPattern);
         }
     } 
 }
