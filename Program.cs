@@ -7,23 +7,20 @@ namespace RegexDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter your password");
-            string password = (Console.ReadLine());
+            Console.WriteLine("Enter your Email");
+            string EmailSample = (Console.ReadLine());
             Pattern pattern = new Pattern();
 
-            if (pattern.ValidatePassword(password))
+            if (pattern.ValidateEmailSample(EmailSample))
             {
-                Console.WriteLine("It's valid password");
+                Console.WriteLine("It's valid Email");
             }
-            else if (password.Length<8)
-            {
-                Console.WriteLine("Please enter atleast 8 characters");
-            }
+           
 
 
             else
             {
-                Console.WriteLine("It's not a valid password");
+                Console.WriteLine("It's not a valid Email");
             }
 
 
